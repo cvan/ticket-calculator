@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>StubHub Ticket calculator</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <form class="form-profit">
+      <fieldset>
+        <legend>Calculate ticket profit</legend>
+        <div class="fields">
+          <label>
+            <span>Reseller's cut</span>
+            <input type="text" name="reseller-cut" class="input-small" value="15" tabindex="-1"> %
+          </label>
+          <label>
+            <span>Number of tickets</span>
+            <input type="number" name="ticket-count" class="input-small" value="2" tabindex="-1">
+          </label>
+          <label>
+            <span>Ticket price at face value</span>
+            $ <input type="text" name="price-face-value" class="input-medium">
+          </label>
+          <label>
+            <span>Ticket price listed on StubHub</span>
+            $ <input type="text" name="price-reseller-value" class="input-medium">
+          </label>
+        </div>
+        <button type="submit">Calculate</button>
+      </fieldset>
+    </form>
+    <h1 class="heading-profit">Profit</h1>
+    $ <input type="number" id="price-profit" name="price-profit" class="input-medium">
+    <script src="main.js"></script>
+  </body>
+</html>
