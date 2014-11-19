@@ -2,6 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script>
+      // Redirect from HTTP to HTTPS.
+      var host = window.location.protocol + '//' + window.location.hostname;
+      if (host.indexOf('http://cvan.io') === 0) {
+        window.location.href = 'https:' + window.location.href.substring(6);
+      }
+    </script>
     <meta name="viewport" content="width=device-width">
     <title>StubHub Ticket calculator</title>
     <link rel="stylesheet" href="main.css">
